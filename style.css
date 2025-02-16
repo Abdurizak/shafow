@@ -14,9 +14,9 @@
     background-color: transparent;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Arial', sans-serif;
     line-height: 1.8;
     background-color: #f9f9f9;
@@ -32,10 +32,10 @@
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: auto; /* Enable vertical scrollbar */
     -webkit-font-smoothing: antialiased; /* Smooth font rendering on iOS */
-  }
-  
-  /* Header Styling */
-  header {
+}
+
+/* Header Styling */
+header {
     background-color: #40bdef;
     color: #ecf0f1;
     padding: 20px 0;
@@ -45,139 +45,157 @@
     z-index: 1000; /* Ensure header stays on top */
     position: sticky; /* Stick the header to the top */
     top: 0; /* Position the header at the top */
-    transition: background-color 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    transition: z-index 0.3s ease;
-    transition: position 0.3s ease;
-    transition: text-align 0.3s ease;
-    transition: font-size 0.3s ease;
-    transition: font-weight 0.3s ease;
-    transition: text-shadow 0.3s ease;
-    transition: text-decoration 0.3s ease;
-    transition: transition 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: opacity 0.3s ease;
-    transition: filter 0.3s ease;
-    transition: visibility 0.3s ease;
-  }
-  
-  header h1 {
+    transition: 
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        z-index 0.3s ease,
+        position 0.3s ease,
+        text-align 0.3s ease,
+        font-size 0.3s ease,
+        font-weight 0.3s ease,
+        text-shadow 0.3s ease,
+        text-decoration 0.3s ease;
+}
+
+header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     font-weight: 700;
-  }
-  
-  /* Navigation Bar */
-  nav {
+}
+
+/* Navigation Bar */
+nav {
     background-color: #40bdef;
     padding: 10px 20px;
-    width: -50%; /* Ensure nav spans the full width */
+    width: 100%; /* Corrected from -50% to 100% */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000; /* Ensure nav stays on top */
     position: sticky; /* Stick the nav to the top */
     top: 0; /* Position the nav at the top */
-    transition: background-color 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    transition: z-index 0.3s ease;
-    transition: position 0.3s ease;
-    transition: text-align 0.3s ease;
-    transition: font-size 0.3s ease;
-    transition: font-weight 0.3s ease;
-    transition: text-shadow 0.3s ease;
-    transition: text-decoration 0.3s ease;
-    transition: transition 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: opacity 0.3s ease;
-    transition: filter 0.3s ease;
-    transition: visibility 0.3s ease;
-  }
-  
-  nav ul {
+    transition: 
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        z-index 0.3s ease,
+        position 0.3s ease,
+        text-align 0.3s ease,
+        font-size 0.3s ease,
+        font-weight 0.3s ease,
+        text-shadow 0.3s ease,
+        text-decoration 0.3s ease;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     flex-direction: column; /* Default for smaller screens */
     gap: 10px;
     justify-content: center; /* Center-align navigation items */
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #ecf0f1;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     text-align: center; /* Center-align link text */
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     background-color: #1242ba;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     nav ul {
-      flex-direction: row; /* Horizontal layout for larger screens */
-      justify-content: center;
-      gap: 20px;
+        flex-direction: row; /* Horizontal layout for larger screens */
+        justify-content: center;
+        gap: 20px;
     }
-  }
-  
-  /* Main Content */
-  main {
+}
+
+/* Main Content */
+main {
     max-width: 800px; /* Limit the width of the main content for better readability */
     padding: 20px;
     width: 100%; /* Ensure main content spans the full width on smaller screens */
-  }
-  
-  section {
+}
+
+section {
     margin-bottom: 40px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-  
-  p {
+}
+
+p {
     text-align: justify; /* Justify paragraphs for better readability */
     margin-bottom: 20px;
-  }
-  
-  /* Image Gallery */
-  .product-gallery {
+}
+
+/* Paragraph Containers (NEW ADDITION) */
+section .paragraph-container {
+    background-color: #e1f5fe; /* Subtle light blue background */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners for a clean look */
+    max-width: 600px; /* Limit the width of the container */
+    margin: 0 auto 20px; /* Center the container and add bottom margin */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section .paragraph-container p {
+    text-align: justify; /* Justify paragraphs for better readability */
+    margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+/* Image Gallery (UPDATED FOR ALIGNMENT) */
+.product-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .product-gallery img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .product-gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-  }
-  
-  /* Map Section */
-  .map img {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center-align images */
+    gap: 20px; /* Space between images */
+}
+
+.product-gallery img {
+    width: 100%; /* Full width within its container */
+    max-width: 300px; /* Limit the maximum width of each image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners for a clean look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.product-gallery img:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Align Three Images in One Line (NEW ADDITION) */
+@media (min-width: 768px) {
+    .product-gallery {
+        justify-content: space-between; /* Distribute images evenly */
+    }
+
+    .product-gallery img {
+        max-width: calc(33.33% - 20px); /* Allow three images per row */
+    }
+}
+
+/* Map Section */
+.map img {
     width: 100%;
     max-width: 600px;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 8px;
-  }
-  
- /* Footer Styling */
-    footer {
+}
+
+/* Footer Styling */
+footer {
     background-color: #40bdef;
     color: #ecf0f1;
     text-align: center; /* Center-align all text inside the footer */
@@ -188,62 +206,62 @@
     box-shadow: 0 -2px 4px rgba(1, 183, 255, 0.5); /* Add a subtle shadow at the top */
     z-index: 1000; /* Ensure footer stays on top */
     transition: 
-      background-color 0.3s ease,
-      box-shadow 0.3s ease,
-      z-index 0.3s ease,
-      text-align 0.3s ease,
-      font-size 0.3s ease,
-      font-weight 0.3s ease,
-      text-shadow 0.3s ease,
-      text-decoration 0.3s ease;
-  }
-  
-  footer p {
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        z-index 0.3s ease,
+        text-align 0.3s ease,
+        font-size 0.3s ease,
+        font-weight 0.3s ease,
+        text-shadow 0.3s ease,
+        text-decoration 0.3s ease;
+}
+
+footer p {
     margin: 0; /* Remove default margins */
     font-size: 1rem; /* Set a consistent font size */
     letter-spacing: 0.05em; /* Add slight spacing between letters */
-  }
-  
-  footer .footer-content {
+}
+
+footer .footer-content {
     display: flex; /* Use Flexbox for alignment */
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center-align all child elements */
     justify-content: center; /* Vertically center content */
-  }
-  
-  footer .footer-links {
+}
+
+footer .footer-links {
     margin-top: 10px; /* Add some space above the links */
     display: flex; /* Use Flexbox for link alignment */
     gap: 10px; /* Space between links */
     flex-wrap: wrap; /* Allow links to wrap on smaller screens */
-  }
-  
-  footer .footer-links a {
+}
+
+footer .footer-links a {
     color: #ecf0f1; /* Link color */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth color transition on hover */
     font-size: 0.9rem; /* Slightly smaller font size for links */
-  }
-  
-  footer .footer-links a:hover {
+}
+
+footer .footer-links a:hover {
     color: #1abc9c; /* Change color on hover */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     header h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     section {
-      padding: 10px;
+        padding: 10px;
     }
-  
+
     .product-gallery img {
-      max-width: 100%;
+        max-width: 100%; /* Full width for smaller screens */
     }
-  
+
     .map img {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
+}
